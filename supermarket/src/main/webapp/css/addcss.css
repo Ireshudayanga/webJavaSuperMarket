@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*-----------Carousel Section-------*/
+#hero {
+    display: flex;
+    background-color: rgb(188, 224, 203);
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-left: 100px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 60px 30px;
+}
+
+.col-2 h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.col-2 p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.col-2 .btn {
+    display: inline-block;
+    background: #d73030;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.carousel {
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.carousel-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #ddd;
+    border: none;
+    padding: 1px;
+    color: #333;
+    outline: none;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
